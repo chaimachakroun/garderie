@@ -5,7 +5,7 @@
 class connexion
 {
 private:
-    QSqlDatabase db ;
+    QSqlDatabase db;
 public:
     connexion();
     bool ouvrirConnexion();

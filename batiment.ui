@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>batiment</class>
+ <widget class="QMainWindow" name="batiment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>771</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">*{
+font-family: century gothic;
+font-size:14px
+}
+*{
+background:#333;
+}</string>
+    </property>
+    <property name="title">
+     <string>Le Petit Prince</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>671</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+</string>
+     </property>
+     <property name="title">
+      <string>Gestion des batiments</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nom du batiment :</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>141</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Batiment crêche</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Batiment jardin d'enfant</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Batiment garderie</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nombre des salles :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nombre des employées :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background:#49ebff ; 
+border-radius:15px; 
+color:#333; 
+border: 2px solid gray ;
+padding: 0.8px;
+}
+QPushButton:hover
+{
+color:#333; 
+border-radius:15px;
+background:#c7cf00;
+border: 2px solid gray ;
+padding: 0.8px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Ajouter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>290</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background:#49ebff ; 
+border-radius:15px; 
+color:#333; 
+border: 2px solid gray ;
+padding: 0.8px;
+}
+QPushButton:hover
+{
+color:#333; 
+border-radius:15px;
+background:#c7cf00;
+border: 2px solid gray ;
+padding: 0.8px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Quitter</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>471</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:Grey;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>30</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>250</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background:#49ebff ; 
+border-radius:15px; 
+color:#333; 
+border: 2px solid gray ;
+padding: 0.8px;
+}
+QPushButton:hover
+{
+color:#333; 
+border-radius:15px;
+background:#c7cf00;
+border: 2px solid gray ;
+padding: 0.8px;
+}</string>
+      </property>
+      <property name="text">
+       <string>supprimer</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>260</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>290</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background:#49ebff ; 
+border-radius:15px; 
+color:#333; 
+border: 2px solid gray ;
+padding: 0.8px;
+}
+QPushButton:hover
+{
+color:#333; 
+border-radius:15px;
+background:#c7cf00;
+border: 2px solid gray ;
+padding: 0.8px;
+}</string>
+      </property>
+      <property name="text">
+       <string>modifier</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Num du batiment :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background:#49ebff ; 
+border-radius:15px; 
+color:#333; 
+border: 2px solid gray ;
+padding: 0.8px;
+}
+QPushButton:hover
+{
+color:#333; 
+border-radius:15px;
+background:#c7cf00;
+border: 2px solid gray ;
+padding: 0.8px;
+}</string>
+      </property>
+      <property name="text">
+       <string>trier</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_14">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>20</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background:#49ebff ; 
+border-radius:15px; 
+color:#333; 
+border: 2px solid gray ;
+padding: 0.8px;
+}
+QPushButton:hover
+{
+color:#333; 
+border-radius:15px;
+background:#c7cf00;
+border: 2px solid gray ;
+padding: 0.8px;
+}</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_12">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>10</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background:#49ebff ; 
+border-radius:15px; 
+color:#333; 
+border: 2px solid gray ;
+padding: 0.8px;
+}
+QPushButton:hover
+{
+color:#333; 
+border-radius:15px;
+background:#c7cf00;
+border: 2px solid gray ;
+padding: 0.8px;
+}</string>
+     </property>
+     <property name="text">
+      <string>PDF</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>batiment</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>541</x>
+     <y>334</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>789</x>
+     <y>348</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
