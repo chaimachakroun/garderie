@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1181</width>
+    <height>767</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>1101</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">*{
+font-family:century gothic ; 
+front-size:24px
+}
+QFrame
+{
+ background:#333;
+border-radius:15px; 
+}
+QPushButton
+{
+background:red ; 
+border-radius:60px; 
+}
+QToolButton
+{
+backfround:red;
+boder-radius:60px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="lineEmpl_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>170</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="tache_4">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>370</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+color:white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Nombre de plats</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+     <property name="indent">
+      <number>-1</number>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEmpl_3">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>240</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEmpl_4">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>100</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tablerepas">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>90</y>
+       <width>411</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableView {
+    background-color: #d7d6d5
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="tache">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>310</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>12</pointsize>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+color:white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Dessert</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+     <property name="indent">
+      <number>-1</number>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineTache">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>310</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineTache_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>370</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>510</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>-1</pointsize>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background-color: #e7e7e7; 
+  border: none;
+  color: black;
+   
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+QPushButton:hover
+{
+background-color: #e7e7e7; /* Green */
+background:#555555 ; 
+  border: none;
+  color: white;
+ 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Modifier</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>460</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>-1</pointsize>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background-color: #e7e7e7; 
+  border: none;
+  color: black;
+   
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+QPushButton:hover
+{
+background-color: #e7e7e7; /* Green */
+background:#555555 ; 
+  border: none;
+  color: white;
+ 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}</string>
+     </property>
+     <property name="text">
+      <string>supprimer</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+    color: #d7d6d5
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Jour</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>170</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+    color: #d7d6d5
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Entrée</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>250</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+    color: #d7d6d5
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Plat principale</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sauvegarder_3">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>430</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background:#49ebff ; 
+border-radius:15px; 
+color:#333; 
+border: 2px solid gray ;
+padding: 0.8px;
+}
+QPushButton:hover
+{
+color:#333; 
+border-radius:15px;
+background:#c7cf00;
+border: 2px solid gray ;
+padding: 0.8px;
+}</string>
+     </property>
+     <property name="text">
+      <string>sauvegarder</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineTache_3">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>390</y>
+       <width>251</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>120</y>
+       <width>181</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/le petit.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sauvegarder_4">
+     <property name="geometry">
+      <rect>
+       <x>940</x>
+       <y>20</y>
+       <width>71</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background:#49ebff ; 
+border-radius:15px; 
+color:#333; 
+border: 2px solid gray ;
+padding: 0.8px;
+}
+QPushButton:hover
+{
+color:#333; 
+border-radius:15px;
+background:#c7cf00;
+border: 2px solid gray ;
+padding: 0.8px;
+}</string>
+     </property>
+     <property name="text">
+      <string>PDF</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sauvegarder_5">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>20</y>
+       <width>131</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background:#49ebff ; 
+border-radius:15px; 
+color:#333; 
+border: 2px solid gray ;
+padding: 0.8px;
+}
+QPushButton:hover
+{
+color:#333; 
+border-radius:15px;
+background:#c7cf00;
+border: 2px solid gray ;
+padding: 0.8px;
+}</string>
+     </property>
+     <property name="text">
+      <string>RECHERCHER</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1181</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
