@@ -1,17 +1,20 @@
-#include "mainwindow.h"
-#include <QApplication>
-#include <QMessageBox>
-#include <QDebug>
+#include "MainWindow.h"
 #include "connexion.h"
+#include <QDebug>
+#include<QMessageBox>
+#include <QApplication>
+
+
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    connexion c;
-     bool test = c.ouvrirConnexion();
-    MainWindow w;
+    Connexion C;
+     bool test = C.ouvrirConnexion();
+  Club Cl;
     if(test)
   {
-          w.show();
+          Cl.show();
           QMessageBox::information(nullptr, QObject::tr("database is  open"),
                       QObject::tr("connexion ok.\n""Click Cancel to exit."), QMessageBox::Cancel);
       }
