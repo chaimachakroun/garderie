@@ -5,6 +5,19 @@
 #include "QTextDocument"
 #include "QFileDialog"
 #include <QPrinter>
+#include <QPainter>
+#include <QPrintDialog>
+#include <QPieSlice>
+#include <QPieSeries>
+#include <QtCharts/QChartView>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QMainWindow>
+#include <QtCharts/QBarSeries>
+#include <QtCharts/QBarSet>
+#include <QtCharts/QLegend>
+#include <QtCharts/QBarCategoryAxis>
+#include"QSortFilterProxyModel"
+QT_CHARTS_USE_NAMESPACE
 
 
 batiment::batiment(QWidget *parent) :
@@ -165,3 +178,51 @@ void batiment::on_lineEdit_3_textChanged(const QString &arg1)
         c.searchRegexp(ui->tableView,mat);
 }
 
+
+void batiment::on_pushButton_15_clicked()
+{
+    QSqlQueryModel * model= new QSqlQueryModel();
+           model->setQuery("select * from batiment where nbrs <10 ");
+           float bat=model->rowCount();
+           model->setQuery("select * from batiment where nbrs between 10 and 20 ");
+           float batt=model->rowCount();
+           model->setQuery("select * from batiment where nbrs >20 ");
+           float battt=model->rowCount();
+           float total=bat+batt+battt;
+           QString a=QString("salles du batimentA  "+QString::number((bat*100)/total,'f',2)+"%" );
+           QString b=QString("salles du batimentB  "+QString::number((batt*100)/total,'f',2)+"%" );
+           QString c=QString("salles du batimentC  "+QString::number((battt*100)/total,'f',2)+"%" );
+           QPieSeries *series = new QPieSeries();
+           series->append(a,bat);
+           series->append(b,batt);
+           series->append(c,battt);
+   if (bat!=0)
+   {QPieSlice *slice = series->slices().at(0);
+    slice->setLabelVisible();
+    slice->setPen(QPen());}
+   if ( batt!=0)
+   {
+            // Add label, explode and define brush for 2nd slice
+            QPieSlice *slice1 = series->slices().at(1);
+            //slice1->setExploded();
+            slice1->setLabelVisible();
+   }
+   if(battt!=0)
+   {
+            // Add labels to rest of slices
+            QPieSlice *slice2 = series->slices().at(2);
+            //slice1->setExploded();
+            slice2->setLabelVisible();
+   }
+           // Create the chart widget
+           QChart *chart = new QChart();
+           // Add data to chart with title and hide legend
+           chart->addSeries(series);
+           chart->setTitle("Pourcentage Par batiment:totale de "+ QString::number(total));
+           chart->legend()->hide();
+           // Used to display the chart
+           QChartView *chartView = new QChartView(chart);
+           chartView->setRenderHint(QPainter::Antialiasing);
+           chartView->resize(1000,500);
+           chartView->show();
+}
